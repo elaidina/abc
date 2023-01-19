@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Poppins&display=swap");
+
+:root {
+  --border-color: #e3e5e4;
+  --background-color: #2c4050;
+  --text-color: #e4e8eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Merienda", cursive;
+  margin-top: 3rem;
+  color: white;
+}
+
+nav button {
+  background-image: linear-gradient(
+    to right,
+    #ff6e7f 0%,
+    #bfe9ff 51%,
+    #ff6e7f 100%
+  );
+}
+nav button {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  transition: 1s;
+  background-size: 200% auto;
+  color: rgb(4, 57, 61);
+  border: none;
+  border-radius: 10px;
+}
+
+nav button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: rgb(4, 57, 61);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00de64 0%, #2600ff 100%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.draggable-list {
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 5rem 10rem;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.draggable-list li {
+  background-color: rgb(16, 128, 136);
+  display: flex;
+  flex: 1;
+  font-family: "Merienda", cursive;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 5px 5px 20px 5px #000000;
+  border-radius: 1rem;
+}
+
+.draggable-list .number {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.draggable-list li.over .draggable {
+  background-color: #eaeaea;
+}
+
+.draggable-list li:last-of-type {
+  max-width: fit-content;
+}
+
+.draggable-list .person-name {
+  margin: 0 20px 0 0;
+}
+
+.draggable-list li.right {
+  background-color: #04802f;
+}
+
+.draggable-list li.wrong {
+  background-color: #fb5555;
+}
+
+.draggable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  flex: 1;
+}
+
+.check-btn {
+  background-color: rgb(53, 181, 240);
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 2rem;
+  position: fixed;
+}
+
+.check-btn:active {
+  transform: scale(0.98);
+}
+
+.check-btn:focus {
+  outline: none;
+}
+.check-btn:hover {
+  background-color: rgb(18, 165, 43);
+}
