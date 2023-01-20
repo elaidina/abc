@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+:root {
+  --border-color: #e3e5e4;
+  --background-color: #2c4050;
+  --text-color: #e4e8eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+}
+
+body {
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.draggable-list {
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 2rem 5rem;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.draggable-list li {
+  background-color: rgb(16, 128, 136);
+  display: flex;
+  flex: 1;
+
+  margin: 0.5rem;
+
+  box-shadow: 5px 5px 10px 5px #0000009a;
+  border-radius: 1rem;
+}
+
+.draggable-list .number {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.draggable-list li.over .draggable {
+  background-color: #eaeaea;
+}
+
+.draggable-list li {
+  max-width: fit-content;
+}
+
+.draggable-list .person-name {
+  margin: 0 20px 0 0;
+}
+
+.draggable-list li.right {
+  background-color: #04802f;
+}
+
+.draggable-list li.wrong {
+  background-color: #fb5555;
+}
+
+.draggable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  flex: 1;
+}
