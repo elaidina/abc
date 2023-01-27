@@ -6,25 +6,7 @@ const second = document.getElementById('second');
 const check = document.getElementById('check');
 
 const panovnici = [
-  'leden',
-  'únor',
-  'březen',
-  'duben',
-  'květen',
-  'červen',
-  'červenec',
-  'srpen',
-  'září',
-  'říjen',
-  'listopad',
-  'prosinec',
-  
-];
 
-
-
-/* const mesiace =
-[
   'január',
   'február',
   'marec',
@@ -37,6 +19,26 @@ const panovnici = [
   'október',
   'november',
   'december',
+  
+  
+];
+
+
+
+/* const mesiace =
+[
+  'leden',
+  'únor',
+  'březen',
+  'duben',
+  'květen',
+  'červen',
+  'červenec',
+  'srpen',
+  'září',
+  'říjen',
+  'listopad',
+  'prosinec',
   
 ]; */
 
